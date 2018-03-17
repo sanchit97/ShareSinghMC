@@ -6,144 +6,158 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.ac.iiitd.sharesingh.CabShareActivity"
+    tools:layout_editor_absoluteY="81dp"
     tools:showIn="@layout/activity_cab_share">
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="37dp"
-        android:layout_marginBottom="37dp"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="41dp"
-        android:gravity="center_vertical|center"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical|center_horizontal|center"
         android:text="Starting Point"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="33dp"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="115dp"
-        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
         android:text="Destination"
-        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_vertical|center_horizontal|center"
         android:text="Date"
-        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="49dp"
-        android:gravity="center_horizontal|center"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
         android:text="Time"
-        android:textAlignment="center"
-        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <TextView
         android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="145dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="49dp"
-        android:gravity="center_horizontal|center"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
         android:text="Co-Passengers"
-        android:textSize="18sp"
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
 
     <TextView
         android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_width="130dp"
+        android:layout_height="45dp"
         android:layout_marginStart="16dp"
-        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_vertical|center_horizontal|center"
         android:text="Min Rating"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/ratingBar3"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:textAlignment="viewStart"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
     <EditText
         android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="48dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="eg. Student Center"
         android:inputType="textPersonName"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView13"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView18" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editText11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:hint="eg. Hauz Khas"
         android:inputType="textPersonName"
-        app:layout_constraintStart_toStartOf="@+id/editText10"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
     <EditText
         android:id="@+id/editText12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="date"
         android:selectAllOnFocus="false"
-        app:layout_constraintStart_toStartOf="@+id/editText11"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText11" />
 
     <EditText
         android:id="@+id/editText13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="18dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="time"
-        app:layout_constraintStart_toStartOf="@+id/editText12"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText12" />
 
     <EditText
         android:id="@+id/editText14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
         android:ems="10"
         android:inputType="numberSigned"
-        app:layout_constraintBaseline_toBaselineOf="@+id/textView17"
-        app:layout_constraintStart_toEndOf="@+id/textView17" />
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13" />
 
     <RatingBar
         android:id="@+id/ratingBar3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="22dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="235dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="30dp"
+        android:numStars="5"
+        android:stepSize="0.5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText14" />
 
@@ -151,9 +165,14 @@
         android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="49dp"
-        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="goToCabShare"
         android:text="Create Trip"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ratingBar3" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ratingBar3" />
 </android.support.constraint.ConstraintLayout>
